@@ -1,0 +1,19 @@
+import sys
+
+print('hello')
+
+my_age=78;
+my_name="bharat"
+
+print("hello",my_name,"my age is ",     my_age)
+
+print(sys.maxsize)
+
+print(sys.float_info.max)
+
+#casting from one data type to other
+print("casting 1",type(int(5.8)))
+print("casting 2",type(float(5)))
+print("casting 3",type(str(5)))
+print("casting 4",type(chr(97)))
+print("casting 5",type(ord('a')))#unicode
