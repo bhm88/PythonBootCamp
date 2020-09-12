@@ -1,0 +1,55 @@
+drinks = input("pick pepsi or coke ")
+if drinks == "pepsi":
+    print("here is ur pepsi")
+elif drinks == "coke":
+    print("here is u coke")
+else:
+    print("here is ur water")
+
+# Calculator program
+
+num_1, operator, num_2 = input("enter calculation: ").split()
+num_1 = int(num_1)
+num_2 = int(num_2)
+
+if operator == "+":
+    print("addistion of {} and {} is {} ".format(num_1, num_2, num_1 + num_2))
+elif operator == "-":
+    print("subtraction of {} and {} is {} ".format(num_1, num_2, num_1 - num_2))
+elif operator == "*":
+    print("product of {} and {} is {} ".format(num_1, num_2, num_1 * num_2))
+elif operator == "//":
+    print("division of {} and {} is {} ".format(num_1, num_2, num_1 // num_2))
+else:
+    print("use +,-,*,//")
+
+
+#relational operators
+age = int(input("enter a age : "))
+if age >= 1 and age <= 15:
+    print("imp birthday for young age")
+elif age == 21 or age == 50:
+    print("imp birthday for teenagers")
+elif not age < 60:
+    print("imp  birthday for old age")
+else:
+    print("not imp birthday")
+
+
+# grade play for age
+AGE=int(input("enter age :"))
+if AGE <5:
+    print("too young to go to school")
+elif AGE==5:
+    print("go to kindergarden")
+elif AGE >5 and AGE<=17:
+    grade=AGE-5
+    print("your grade is {}".format(grade))
+else:
+    print("go to college")
+
+    # #Ternary operator
+
+age_vote=int(input("enter ur age :"))
+can_vote=True if age_vote>=18 else False
+print("you can vote ",can_vote)
